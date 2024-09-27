@@ -49,6 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Background scroll effect
   document.addEventListener("scroll", () => {
-    elem.style.backgroundPositionX = `0 ${0.5 * window.scrollY}px`;
+    elem.style.backgroundPositionX = "0" + 0.5 * window.scrollY + "px";
   });
 });
