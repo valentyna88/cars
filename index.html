@@ -1,244 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Аренда премиальных автомобилей</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-
-<header class="header">
-    <div class="container">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo">
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Luxury Car Rental offers an exclusive collection of sports cars available for rent, including Lamborghini, Ferrari, and Audi models. Book now and enjoy the thrill of driving a legendary vehicle."
+    />
+    <meta
+      name="keywords"
+      content="Luxury Car Rental, sports cars, Lamborghini, Ferrari, Audi, car booking, exclusive car hire"
+    />
+    <meta property="og:title" content="Luxury Car Rental" />
+    <meta
+      property="og:description"
+      content="Drive exclusive sports cars, including Lamborghini, Ferrari, and Audi. Book your dream car now!"
+    />
+    <meta property="og:image" content="images/preview.png" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <title>Luxury car rental</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="images/logo.png" alt="Luxury Car Rental Logo" class="logo" />
         <nav class="menu">
-            <ul>
-                <li class="menu-item">
-                    <a href="#">Главная</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#cars">Автомобили</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#price">Бронирование авто</a>
-                </li>
-            </ul>
+          <ul>
+            <li class="menu-item">
+              <a href="#home">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="#cars">Cars</a>
+            </li>
+            <li class="menu-item">
+              <a href="#price">Cars Booking</a>
+            </li>
+          </ul>
         </nav>
-    </div>
-</header>
-
-<section class="main">
-    <div class="container">
-        <div class="main-info">
-            <h1 class="main-title">Аренда премиальных автомобилей</h1>
-            <div class="main-text">
-                В нашем клубе имеется солидная коллекция спортивных автомобилей — от достаточно распространенных
-                серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной возможностью побывать за
-                рулем настоящей легенды и узнать, на что она способна за пределами гоночной трассы!
-            </div>
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="container">
+          <div class="main-info">
+            <h1 class="main-title">Luxury car rental</h1>
+            <p class="main-text">
+              Our club boasts a solid collection of sports cars — from common
+              series cars to real racing exclusives. Take advantage of a unique
+              opportunity to get behind the wheel of a real legend and find out
+              what it is capable of outside the race track!
+            </p>
             <div class="main-action">
-                <button class="button" id="main-action">Посмотреть автомобили</button>
+              <button
+                class="button"
+                id="main-action"
+                aria-label="View available cars"
+              >
+                View Cars
+              </button>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-<section class="car" id="cars">
-    <div class="container">
-        <h2 class="sub-title">Наш автопарк</h2>
-        <div class="car-items">
-            <div class="car-item">
-                <div class="car-item-image">
-                    <img src="images/1.png" alt="Image 1">
-                </div>
-                <div class="car-item-title">Lamborghini Huracan Spyder</div>
-                <div class="car-item-info">
-                    <div class="car-item-point">
-                        <img src="images/gear.png" alt="Gear">
-                        <div>Привод</div>
-                        <div>полный</div>
-                    </div>
-                    <div class="car-item-point">
-                        <img src="images/wheel.png" alt="Wheel">
-                        <div>Двигатель</div>
-                        <div>5.2 л.с.</div>
-                    </div>
-                    <div class="car-item-point">
-                        <img src="images/belt.png" alt="Belt">
-                        <div>Кол-во мест</div>
-                        <div>2</div>
-                    </div>
-                </div>
-                <div class="car-item-action">
-                    <button class="button car-button">Забронировать</button>
-                </div>
-            </div>
+      <section class="car" id="cars">
+        <div class="container">
+          <h2 class="sub-title">Our Fleet</h2>
+          <div class="car-items">
+            <article class="car-item">
+              <div class="car-item-image">
+                <img
+                  src="images/lamborghini.png"
+                  alt="Lamborghini Huracan Spyder"
+                />
+              </div>
+              <h3 class="car-item-title">Lamborghini Huracan Spyder</h3>
+              <ul class="car-item-info">
+                <li class="car-item-point">
+                  <img src="images/gear.png" alt="Drive type" />
+                  <div>Drive</div>
+                  <div>all-wheel</div>
+                </li>
+                <li class="car-item-point">
+                  <img src="images/wheel.png" alt="Engine power" />
+                  <div>Engine</div>
+                  <div>5.2 hp</div>
+                </li>
+                <li class="car-item-point">
+                  <img src="images/belt.png" alt="Seating capacity" />
+                  <div>Seats</div>
+                  <div>2</div>
+                </li>
+              </ul>
+              <div class="car-item-action">
+                <button
+                  class="button car-button"
+                  aria-label="Book Lamborghini Huracan Spyder"
+                >
+                  Book Now
+                </button>
+              </div>
+            </article>
 
-            <div class="car-item">
-                <div class="car-item-image">
-                    <img src="images/2.png" alt="Image 2">
-                </div>
-                <div class="car-item-title">Chevrolet Corvette</div>
-                <div class="car-item-info">
-                    <div class="car-item-point">
-                        <img src="images/gear.png" alt="Gear">
-                        <div>Привод</div>
-                        <div>полный</div>
-                    </div>
-                    <div class="car-item-point">
-                        <img src="images/wheel.png" alt="Wheel">
-                        <div>Двигатель</div>
-                        <div>6.2 л.с.</div>
-                    </div>
-                    <div class="car-item-point">
-                        <img src="images/belt.png" alt="Belt">
-                        <div>Кол-во мест</div>
-                        <div>2</div>
-                    </div>
-                </div>
-                <div class="car-item-action">
-                    <button class="button car-button">Забронировать</button>
-                </div>
-            </div>
+            <article class="car-item">
+              <div class="car-item-image">
+                <img src="images/chevrolet.png" alt="Chevrolet Corvette" />
+              </div>
+              <h3 class="car-item-title">Chevrolet Corvette</h3>
+              <ul class="car-item-info">
+                <li class="car-item-point">
+                  <img src="images/gear.png" alt="Gear" />
+                  <div>Drive</div>
+                  <div>all-wheel</div>
+                </li>
+                <li class="car-item-point">
+                  <img src="images/wheel.png" alt="Wheel" />
+                  <div>Engine</div>
+                  <div>6.2 hp</div>
+                </li>
+                <li class="car-item-point">
+                  <img src="images/belt.png" alt="Belt" />
+                  <div>Seats</div>
+                  <div>2</div>
+                </li>
+              </ul>
+              <div class="car-item-action">
+                <button class="button car-button">Book Now</button>
+              </div>
+            </article>
 
-            <div class="car-item">
-                <div class="car-item-image">
-                    <img src="images/3.png" alt="Image 3">
-                </div>
-                <div class="car-item-title">Ferrari California</div>
-                <div class="car-item-info">
-                    <div class="car-item-point">
-                        <img src="images/gear.png" alt="Gear">
-                        <div>Привод</div>
-                        <div>полный</div>
-                    </div>
-                    <div class="car-item-point">
-                        <img src="images/wheel.png" alt="Wheel">
-                        <div>Двигатель</div>
-                        <div>3.9 л.с.</div>
-                    </div>
-                    <div class="car-item-point">
-                        <img src="images/belt.png" alt="Belt">
-                        <div>Кол-во мест</div>
-                        <div>4</div>
-                    </div>
-                </div>
-                <div class="car-item-action">
-                    <button class="button car-button">Забронировать</button>
-                </div>
-            </div>
+            <article class="car-item">
+              <div class="car-item-image">
+                <img src="images/ferrari.png" alt="Ferrari California" />
+              </div>
+              <h3 class="car-item-title">Ferrari California</h3>
+              <ul class="car-item-info">
+                <li class="car-item-point">
+                  <img src="images/gear.png" alt="Gear" />
+                  <div>Drive</div>
+                  <div>all-wheel</div>
+                </li>
+                <li class="car-item-point">
+                  <img src="images/wheel.png" alt="Wheel" />
+                  <div>Engine</div>
+                  <div>3.9 hp</div>
+                </li>
+                <li class="car-item-point">
+                  <img src="images/belt.png" alt="Belt" />
+                  <div>Seats</div>
+                  <div>4</div>
+                </li>
+              </ul>
+              <div class="car-item-action">
+                <button class="button car-button">Book Now</button>
+              </div>
+            </article>
 
-            <div class="car-item">
-                <div class="car-item-image">
-                    <img src="images/4.png" alt="Image 4">
-                </div>
-                <div class="car-item-title">Lamborghini Urus</div>
-                <div class="car-item-info">
-                    <div class="car-item-point">
-                        <img src="images/gear.png" alt="Gear">
-                        <div>Привод</div>
-                        <div>полный</div>
-                    </div>
-                    <div class="car-item-point">
-                        <img src="images/wheel.png" alt="Wheel">
-                        <div>Двигатель</div>
-                        <div>4.0 л.с.</div>
-                    </div>
-                    <div class="car-item-point">
-                        <img src="images/belt.png" alt="Belt">
-                        <div>Кол-во мест</div>
-                        <div>5</div>
-                    </div>
-                </div>
-                <div class="car-item-action">
-                    <button class="button car-button">Забронировать</button>
-                </div>
-            </div>
+            <article class="car-item">
+              <div class="car-item-image">
+                <img src="images/lamborghini-urus.png" alt="Lamborghini Urus" />
+              </div>
+              <h3 class="car-item-title">Lamborghini Urus</h3>
+              <ul class="car-item-info">
+                <li class="car-item-point">
+                  <img src="images/gear.png" alt="Gear" />
+                  <div>Drive</div>
+                  <div>all-wheel</div>
+                </li>
+                <li class="car-item-point">
+                  <img src="images/wheel.png" alt="Wheel" />
+                  <div>Engine</div>
+                  <div>4.0 hp</div>
+                </li>
+                <li class="car-item-point">
+                  <img src="images/belt.png" alt="Belt" />
+                  <div>Seats</div>
+                  <div>5</div>
+                </li>
+              </ul>
+              <div class="car-item-action">
+                <button class="button car-button">Book Now</button>
+              </div>
+            </article>
 
-            <div class="car-item">
-                <div class="car-item-image">
-                    <img src="images/5.png" alt="Image 5">
-                </div>
-                <div class="car-item-title">Audi R8</div>
-                <div class="car-item-info">
-                    <div class="car-item-point">
-                        <img src="images/gear.png" alt="Gear">
-                        <div>Привод</div>
-                        <div>полный</div>
-                    </div>
-                    <div class="car-item-point">
-                        <img src="images/wheel.png" alt="Wheel">
-                        <div>Двигатель</div>
-                        <div>5.2 л.с.</div>
-                    </div>
-                    <div class="car-item-point">
-                        <img src="images/belt.png" alt="Belt">
-                        <div>Кол-во мест</div>
-                        <div>2</div>
-                    </div>
-                </div>
-                <div class="car-item-action">
-                    <button class="button car-button">Забронировать</button>
-                </div>
-            </div>
+            <article class="car-item">
+              <div class="car-item-image">
+                <img src="images/audi-r8-black.png" alt="Audi R8" />
+              </div>
+              <h3 class="car-item-title">Audi R8</h3>
+              <ul class="car-item-info">
+                <li class="car-item-point">
+                  <img src="images/gear.png" alt="Gear" />
+                  <div>Drive</div>
+                  <div>all-wheel</div>
+                </li>
+                <li class="car-item-point">
+                  <img src="images/wheel.png" alt="Wheel" />
+                  <div>Engine</div>
+                  <div>5.2 hp</div>
+                </li>
+                <li class="car-item-point">
+                  <img src="images/belt.png" alt="Belt" />
+                  <div>Seats</div>
+                  <div>2</div>
+                </li>
+              </ul>
+              <div class="car-item-action">
+                <button class="button car-button">Book Now</button>
+              </div>
+            </article>
 
-            <div class="car-item">
-                <div class="car-item-image">
-                    <img src="images/6.png" alt="Image 6">
-                </div>
-                <div class="car-item-title">Audi R8</div>
-                <div class="car-item-info">
-                    <div class="car-item-point">
-                        <img src="images/gear.png" alt="Gear">
-                        <div>Привод</div>
-                        <div>полный</div>
-                    </div>
-                    <div class="car-item-point">
-                        <img src="images/wheel.png" alt="Wheel">
-                        <div>Двигатель</div>
-                        <div>2.0 л.с.</div>
-                    </div>
-                    <div class="car-item-point">
-                        <img src="images/belt.png" alt="Belt">
-                        <div>Кол-во мест</div>
-                        <div>4</div>
-                    </div>
-                </div>
-                <div class="car-item-action">
-                    <button class="button car-button">Забронировать</button>
-                </div>
-            </div>
+            <article class="car-item">
+              <div class="car-item-image">
+                <img src="images/audi-r8-yellow.png" alt="Audi R8" />
+              </div>
+              <h3 class="car-item-title">Audi R8</h3>
+              <ul class="car-item-info">
+                <li class="car-item-point">
+                  <img src="images/gear.png" alt="Gear" />
+                  <div>Drive</div>
+                  <div>all-wheel</div>
+                </li>
+                <li class="car-item-point">
+                  <img src="images/wheel.png" alt="Wheel" />
+                  <div>Engine</div>
+                  <div>2.0 hp</div>
+                </li>
+                <li class="car-item-point">
+                  <img src="images/belt.png" alt="Belt" />
+                  <div>Seats</div>
+                  <div>4</div>
+                </li>
+              </ul>
+              <div class="car-item-action">
+                <button class="button car-button">Book Now</button>
+              </div>
+            </article>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-<section class="price" id="price">
-    <div class="container">
-        <h2 class="sub-title">Узнать цену и забронировать</h2>
-        <div class="price-text">
-            Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования
+      <section class="price" id="price">
+        <div class="container">
+          <h2 class="sub-title">Get Price and Book</h2>
+          <p class="price-text">
+            Fill in your details, and we will call you back to clarify all the
+            booking details
+          </p>
+          <form action="" class="price-form">
+            <input
+              type="text"
+              class="price-input"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="tel"
+              class="price-input"
+              id="phone"
+              placeholder="Your Phone"
+              required
+            />
+            <input
+              type="text"
+              class="price-input"
+              id="car"
+              placeholder="The car you're interested in"
+              required
+            />
+            <button class="button" type="submit" id="price-action">
+              Get Price
+            </button>
+            <img src="images/rolls.png" alt="Rolls" class="price-image" />
+          </form>
         </div>
-        <form action="" class="price-form">
-            <input type="text" class="price-input" id="name" placeholder="Ваше имя">
-            <input type="text" class="price-input" id="phone" placeholder="Ваш телефон">
-            <input type="text" class="price-input" id="car" placeholder="Автомобиль, который вас интересует">
-            <button class="button" type="button" id="price-action">Узнать цену</button>
-            <img src="images/rolls.png" alt="Rolls" class="price-image">
-        </form>
-    </div>
-</section>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <img src="images/logo.png" alt="Logo" class="logo" />
 
-<footer class="footer">
-    <div class="container">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo">
-        </div>
-        <div class="rights">Все права защищены</div>
-    </div>
-</footer>
+        <p class="rights">All rights reserved</p>
+      </div>
+    </footer>
 
-<script src="scripts/script.js"></script>
-
-</body>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
